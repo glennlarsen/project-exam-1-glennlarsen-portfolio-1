@@ -87,25 +87,40 @@
             <div class="footer-logo">
               <img src="logo/logo-footer.svg" alt="" />
             </div>
+            <form id="form-subscribe_footer">
             <div class="subscribe">
               <h3>subscribe now to follow my future adventures!</h3>
               <input
                 type="name"
-                id="name"
+                id="name-sub_footer"
                 name="name"
                 placeholder="First Name"
               />
+              <div class="form-error" id="nameError-sub_footer">
+                Please enter your name (Minimum 3 characters)
+              </div>
               <input
                 type="email"
-                id="email"
+                id="email-sub_footer"
                 name="email"
                 placeholder="Email address"
               />
-              <div class="subscribe-button">
-                <button type="submit" class="cta cta-footer cta-footer_subscribe">Subscribe</button>
+              <div class="form-error" id="emailError-sub_footer">
+                Please enter a valid email address
               </div>
-              <div class="form-success" id="subscribe-success_footer">You have successfully subscribed!</div>
+              <div class="subscribe-button">
+                <button disabled
+                  type="submit"
+                  class="cta cta-footer cta-footer_subscribe"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <div class="form-success" id="subscribe-success_footer">
+                You have successfully subscribed!
+              </div>
             </div>
+          </form>
           </div>
         </div>
         <div class="bottom-footer">
@@ -132,6 +147,6 @@
     <script src="js/hideNav.js"></script>
     <script src="js/posts.js"></script>
     <script src="js/components/displayError.js"></script>
-    <script src="js/subscribe.js"></script>
+    <script src="js/subscribeFot.js"></script>
   </body>
 </html>

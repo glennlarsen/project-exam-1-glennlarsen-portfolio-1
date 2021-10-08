@@ -25,10 +25,11 @@ toTop.onclick = function () {
 
 window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
+function scrollFunction()  {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     toTop.style.display = "block";
   } else {
     toTop.style.display = "none";
   }
+
 }
