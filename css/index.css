@@ -1,0 +1,195 @@
+/*Header Image*/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.1)),
+    url(../images/home.jpg) center, no-repeat;
+  background-size: cover;
+}
+
+/*Intro*/
+.intro img {
+  overflow: hidden;
+}
+
+/*Latest Posts*/
+
+.latest_posts {
+  background: var(--red);
+  padding-bottom: 120px;
+}
+
+.latest_posts h2 {
+  color: var(--turquoise);
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Carousel*/
+
+.carousel {
+  position: relative;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.carousel_track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_track,
+.carousel_track2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+  display: flex;
+  gap: 20px;
+}
+
+.carousel_slide {
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+  min-width: 100%;
+}
+
+.carousel_slide:hover .slide_overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  transition: 0.5s;
+}
+
+.slide_overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  height: 170px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+  overflow: hidden;
+}
+
+.slide_overlay h3,
+.slide_overlay p {
+  position: absolute;
+  z-index: 101;
+  color: white;
+  font-size: 1.5em;
+  margin: 20px;
+  top: -6px;
+  line-height: 1.5;
+}
+
+.carousel_slide p {
+  top: 113px;
+  font-size: 1em;
+  color: var(--dark-orange);
+  font-weight: bold;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  color: var(--turquoise);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.carousel_button i:hover {
+  transition: 0.2s ease-out;
+  transform: scale(1.2);
+}
+
+.carousel_button-left,
+.carousel_button-left2 {
+  left: -40px;
+}
+
+.carousel_button-right,
+.carousel_button-right2 {
+  right: -40px;
+}
+
+.carousel_button img {
+  width: 15px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/*Featured post 1*/
+
+.featured-post-1 {
+  background: url(../patterns/flower-pattern.svg) center, no-repeat;
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.flex_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-img {
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+/*Featured post 2*/
+
+.featured-post-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(../images/mercure/mercure.jpg) center, no-repeat;
+  background-size: cover;
+  color: white;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.featured-post-2 h2,
+.featured-post-2 p {
+  color: white;
+  font-family: var(--text-heading);
+  max-width: 380px;
+}
+
+.overlay-box {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Top 5 Accommodation*/
+
+.accommodation {
+  padding-bottom: 100px;
+}
+
+.accommodation h2 {
+  color: var(--turquoise);
+  text-align: center;
+}

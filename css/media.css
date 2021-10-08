@@ -1,0 +1,265 @@
+/*Tablet*/
+@media screen and (min-width: 750px) {
+  /*Home page*/
+
+  /*About me intro*/
+  .intro {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+  }
+
+  /*Carousel*/
+  .carousel_slide {
+    min-width: 50%;
+  }
+
+  /*Featured post 1*/
+  .flex_content {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .flex_content > * {
+    flex: 1;
+  }
+
+  .button,
+  .petra-title {
+    position: absolute;
+    left: 51%;
+  }
+  .petra-title {
+    top: 9%;
+    max-width: 460px;
+  }
+
+  .button {
+    bottom: 19%;
+  }
+
+  /*About me*/
+
+  .introduction {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .intro-flex {
+    flex-direction: row;
+    gap: 60px;
+    font-size: 20px;
+  }
+
+  .intro-flex > * {
+    flex: 1;
+  }
+
+  .more_about-me {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  /*Contact page*/
+  .subscribe_contact {
+    margin: 0 auto;
+  }
+
+  /*Blog page*/
+
+  .search input {
+    border-color: var(--dark-orange);
+    width: 50%;
+  }
+
+  /*details page*/
+
+  .blog-section {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .blocks-gallery-grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .blocks-gallery-grid img {
+    max-height: 350px;
+  }
+
+  .modal-image {
+    max-width: 60%;
+    max-height: 85%;
+  }
+
+  /*Footer*/
+
+  .top-footer_container {
+    flex-direction: row;
+    max-width: 1150px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscribe {
+    max-width: 40%;
+  }
+
+  .footer-logo {
+    align-items: center;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1150px) {
+  /*Global*/
+  header {
+    min-height: 500px;
+    margin-top: 94px;
+  }
+
+  h1 {
+    font-size: 4em;
+    max-width: 1150px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  .to-top {
+    right: 60px;
+  }
+
+  /*Navigation*/
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav_bar {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .logo {
+    min-width: fit-content;
+  }
+
+  nav {
+    display: inline-block;
+    position: static;
+    box-shadow: none;
+  }
+
+  .nav-flex {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  .nav-flex ul {
+    display: flex;
+  }
+
+  /*Home page*/
+
+  /*About me intro*/
+  .intro {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .circle img {
+    width: 550px;
+    height: 550px;
+  }
+
+  /*Carousel*/
+
+  .carousel {
+    max-width: 1150px;
+  }
+
+  .carousel_slide {
+    min-width: 32.23%;
+  }
+
+  /*Featured post 1*/
+  .flex_content {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .featured-img {
+    min-height: 450px;
+  }
+
+  .petra-title {
+    top: 12%;
+  }
+
+  .button {
+    bottom: 21%;
+  }
+
+  /*Featured post 2*/
+  .featured-post-2 {
+    height: 800px;
+  }
+
+  .featured-post-2 .text_content {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .featured-post-2 h2,
+  .featured-post-2 p {
+    max-width: 490px;
+  }
+
+  /*about me*/
+
+  .introduction {
+    padding-top: 60px;
+  }
+
+  /*Contact page*/
+
+  .contact-form,
+  .subscribe_contact {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .subscribe_contact {
+    max-width: 400px;
+  }
+
+  .contact-form .text_content {
+    padding: 20px 0;
+  }
+
+  .contact-form {
+    padding: 0 20px;
+  }
+
+  /*Details page*/
+
+  .info {
+    font-size: 16px;
+  }
+}
