@@ -48,22 +48,21 @@ function createHtmlAcco(post) {
     const prevButton = document.querySelector('.carousel_button-left2');
     const carouselContainer = document.querySelector('.carousel_track2');
     const slides = Array.from(carouselContainer.children);
+    const slideWidth = slides[0].getBoundingClientRect().width;
     let slidesPage = Math.ceil(slides.length);
     let slide = 0;
-    let movePer = 106;
+    let movePer = slideWidth + 20;  //+20 for the 20px gap between slides
     let maxMove = movePer * (slidesPage - 1);
 
 
     // Tablet view	
     let tabletView = window.matchMedia("(min-width: 750px)");
-    let desktopView = window.matchMedia("(min-width: 1150px)");
     if (tabletView.matches) {
-        movePer = 53;
         maxMove = movePer * (slidesPage - 2);
     }
     //desktop View
+    let desktopView = window.matchMedia("(min-width: 1150px)");
     if (desktopView.matches) {
-        movePer = 34;
         maxMove = movePer * (slidesPage - 3);
     }
 
@@ -72,7 +71,7 @@ function createHtmlAcco(post) {
         if (slides == 1) { slide = 0; }
         for (const i of slides) {
             if (slide > maxMove) { slide = slide - movePer; }
-            i.style.left = '-' + slide + '%';
+            i.style.left = '-' + slide + 'px';
         }
 
     }
@@ -82,7 +81,7 @@ function createHtmlAcco(post) {
         if (slide <= 0) { slide = 0; }
         for (const i of slides) {
             if (slidesPage > 1) {
-                i.style.left = '-' + slide + '%';
+                i.style.left = '-' + slide + 'px';
             }
         }
     }
