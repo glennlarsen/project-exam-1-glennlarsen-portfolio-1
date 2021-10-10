@@ -40,13 +40,24 @@ function createHtml(post) {
   let dateString = `${post.modified}`.slice(0, 10);
   let timeString = `${post.modified}`.slice(11, 16);
   let postUpdated = dateString + ", " + timeString
+  let category = "Blog";
+  let categoryId = `${post.categories}`.slice(0, 2);
+  let NewCategoryId = categoryId.replace(',', '');
+  if (NewCategoryId == 2) {
+    category = category;
+  } else if (NewCategoryId == 17) {
+    category = "Accommodation";
+  } else {
+    category = "";
+  }
+
 
   blog.innerHTML =
     `
       
       <section class="blog-section">
       <div class="text_content">
-      <span class="info">Author: Glenn Larsen | Updated: ${postUpdated}</span>
+      <span class="info"><b>Author:</b> Glenn Larsen | <b>Updated:</b> ${postUpdated} | <b>Category:</b> <a href="${category}.html">${category}</a></span>
       <div class="line"></div>
       ${post.content.rendered}
       </div>
@@ -84,7 +95,6 @@ function createHtml(post) {
     <img class="modal-image">
     <div class="caption"></div>
   </div>
-   
   
       `
 
